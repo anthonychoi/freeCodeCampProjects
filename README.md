@@ -1,2 +1,1 @@
-# freeCodeCampProjects
-tutorial projects from freeCodeCamp
+IN PROGRESS
