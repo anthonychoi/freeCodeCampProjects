@@ -1,38 +1,29 @@
-@import url("normalize.css");
-
 body {
   min-width: 250px;
   font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #title {
-  background-color: rgba(100, 100, 100, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   margin: 0;
   padding: 32px 16px;
   text-align: center;
 }
 
 #main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-gap: 16px;
 }
 
 #img-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
   margin: 16px auto;
 }
 #image {
-  max-width: 64px;
-  max-height: 64px;
-}
-
-#tribute-info {
-  text-align: center;
-}
-
-#tribute-link {
-  text-align: center;
+  width: 100%;
 }
