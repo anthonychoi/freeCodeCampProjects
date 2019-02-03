@@ -8,6 +8,12 @@ body {
 .row {
   display: flex;
   flex-direction: row;
+  flex: 1 1;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 p {
