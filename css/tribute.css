@@ -1,14 +1,15 @@
 body {
-  min-width: 300px;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.9);
   font-family: Helvetica;
+  line-height: 1.5;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 8px;
 }
 
 .column {
@@ -23,10 +24,11 @@ body {
 }
 
 #title {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 1);
   margin: 0;
   padding: 32px 16px;
   font-size: 32px;
+  color: rgba( 255, 255, 255, 0.8);
 }
 
 #img-div {
@@ -39,15 +41,38 @@ body {
 
 #img-caption {
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
+#tribute-info {
+  margin-left: 1%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 50%;
+}
 .manga-image {
-  max-width: 208px;
-  max-height: 304px;
+  flex: 0 1 50%;
+  height: 296px;
+  max-width: 160px;
 }
 
 .manga-desc {
+  flex: 1 1 50%;
+  margin: 8px;
+}
+
+#tribute-link {
+  text-decoration: underline;
+  text-align: center;
   margin: auto;
-  padding-left: 12px;
+  margin-top: 5%;
+  color: #000;
+  font-size: 32px;
+}
+
+#tribute-link:hover {
+  color: #555;
 }
