@@ -46,22 +46,24 @@ body {
 
 #tribute-info {
   margin-left: 1%;
+  margin-right: 1%;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
+  display: block;
   flex: 1 0 50%;
+  min-width: 300px;
 }
+
 .manga-image {
-  flex: 0 1 50%;
-  height: 296px;
+  float: left;
+  height: 240px;
   max-width: 160px;
+  margin: 8px;
 }
 
 .manga-desc {
-  flex: 1 1 50%;
-  margin: 8px;
+  margin: 16px;
 }
 
 #tribute-link {
@@ -75,4 +77,10 @@ body {
 
 #tribute-link:hover {
   color: #555;
+}
+
+@media (max-width: 1260px) {
+  .column {
+    flex-basis: 100%;
+  }
 }
