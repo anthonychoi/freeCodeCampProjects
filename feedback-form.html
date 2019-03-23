@@ -14,9 +14,37 @@
       <h1 id="title">Feedback Form</h1>
       <p id="description">Please take the time to leave some feedback.</p>
 
-      <form id="survey-form">
-        <label id="name"></label>
-        <button id="submit">Submit my feedback</button>
+      <form id="survey-form" method="get">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+        <label for="age" id="number-label">Age</label>
+        <input type="number" name="age" id="number" min="0" max="150" placeholder="Age">
+
+        <label for="pokemon">Choose your Pokemon</label>
+        <select id="dropdown" name="pokemon">
+          <option disabled selected value="">Select a Pokemon</option>
+          <option value="bulbasaur">Bulbasaur</option>
+          <option value="squirtle">Squirtle</option>
+          <option value="charmander">Charmander</option>
+        </select>
+
+        <label for="type">What kind of feedback are you leaving?</label>
+        <input type="radio" name="type" value="2">Good
+        <input type="radio" name="type" value="1">Bad
+        <input type="radio" name="type" value="0">Don't Know
+
+        <label for="medium">Which method of communication do you prefer?</label>
+        <input type="checkbox" name="medium" value="sight">Sight
+        <input type="checkbox" name="medium" value="speech">Speech
+        <input type="checkbox" name="medium" value="touch">Touch
+
+        <label for="comment">Comments</label>
+        <textarea type="text" name="comment"></textarea>
+        <button id="submit" type="submit">Submit my feedback</button>
       </form>
     </main>
   </body>
