@@ -24,26 +24,30 @@
         <label for="age" id="number-label">Age</label>
         <input type="number" name="age" id="number" min="0" max="150" placeholder="Age">
 
-        <label for="pokemon">Choose your Pokemon</label>
+        <label for="pokemon" id="pokemon-label">Choose your Pokemon</label>
         <select id="dropdown" name="pokemon">
-          <option disabled selected value="">Select a Pokemon</option>
-          <option value="bulbasaur">Bulbasaur</option>
-          <option value="squirtle">Squirtle</option>
-          <option value="charmander">Charmander</option>
+          <option class="dropdown-option" disabled selected value="">Select a Pokemon</option>
+          <option class="dropdown-option" value="bulbasaur">Bulbasaur</option>
+          <option class="dropdown-option" value="squirtle">Squirtle</option>
+          <option class="dropdown-option" value="charmander">Charmander</option>
         </select>
 
-        <label for="type">What kind of feedback are you leaving?</label>
-        <input type="radio" name="type" value="2">Good
-        <input type="radio" name="type" value="1">Bad
-        <input type="radio" name="type" value="0">Don't Know
+        <label for="type" id="type-label">What kind of feedback are you leaving?</label>
+        <ul class="choice">
+          <li class="choice-item"><input type="radio" name="type" value="2">Good</li>
+          <li class="choice-item"><input type="radio" name="type" value="1">Bad</li>
+          <li class="choice-item"><input type="radio" name="type" value="0">Don't Know</li>
+        </ul>
 
-        <label for="medium">Which method of communication do you prefer?</label>
-        <input type="checkbox" name="medium" value="sight">Sight
-        <input type="checkbox" name="medium" value="speech">Speech
-        <input type="checkbox" name="medium" value="touch">Touch
+        <label for="medium" id="medium-label">Which method of communication do you prefer?</label>
+        <ul class="choice">
+          <li class="choice-item"><input type="checkbox" name="medium" value="sight">Sight</li>
+          <li class="choice-item"><input type="checkbox" name="medium" value="speech">Speech</li>
+          <li class="choice-item"><input type="checkbox" name="medium" value="touch">Touch</li>
+        </ul>
 
-        <label for="comment">Comments</label>
-        <textarea type="text" name="comment"></textarea>
+        <label for="comment" id="comment-label">Comments</label>
+        <textarea type="text" name="comment" id="comment-box"></textarea>
         <button id="submit" type="submit">Submit my feedback</button>
       </form>
     </main>
