@@ -22,7 +22,7 @@
         <input id="email" type="email" name="email" placeholder="Enter your email" required>
 
         <label for="age" id="number-label">Age</label>
-        <input type="number" name="age" id="number" min="0" max="150" placeholder="Age">
+        <input type="number" name="age" id="number" min="0" max="150" placeholder="Enter your age">
 
         <label for="pokemon" id="pokemon-label">Choose your Pokemon</label>
         <select id="dropdown" name="pokemon">
@@ -34,19 +34,19 @@
 
         <label for="type" id="type-label">What kind of feedback are you leaving?</label>
         <ul class="choice">
-          <li class="choice-item"><input type="radio" name="type" value="2">Good</li>
-          <li class="choice-item"><input type="radio" name="type" value="1">Bad</li>
-          <li class="choice-item"><input type="radio" name="type" value="0">Don't Know</li>
+          <li class="choice-item"><input class="list-input" type="radio" name="type" value="2">Good</li>
+          <li class="choice-item"><input class="list-input" type="radio" name="type" value="1">Bad</li>
+          <li class="choice-item"><input class="list-input" type="radio" name="type" value="0">Don't Know</li>
         </ul>
 
         <label for="medium" id="medium-label">Which method of communication do you prefer?</label>
         <ul class="choice">
-          <li class="choice-item"><input type="checkbox" name="medium" value="sight">Sight</li>
-          <li class="choice-item"><input type="checkbox" name="medium" value="speech">Speech</li>
-          <li class="choice-item"><input type="checkbox" name="medium" value="touch">Touch</li>
+          <li class="choice-item"><input class="list-input" type="checkbox" name="medium" value="sight">Sight</li>
+          <li class="choice-item"><input class="list-input" type="checkbox" name="medium" value="speech">Speech</li>
+          <li class="choice-item"><input class="list-input" type="checkbox" name="medium" value="touch">Touch</li>
         </ul>
 
-        <label for="comment" id="comment-label">Comments</label>
+        <label for="comment" id="comment-label">Feedback</label>
         <textarea type="text" name="comment" id="comment-box"></textarea>
         <button id="submit" type="submit">Submit my feedback</button>
       </form>
