@@ -13,7 +13,47 @@ body {
   color: rgba( 255, 255, 255, 0.8);
 }
 
+
+#description {
+  margin: 16px;
+}
+
 #survey-form {
   display: flex;
   flex-direction: column;
+  margin: 8px;
+}
+
+input#name {
+  width: 240px;
+  margin-bottom: 16px;
+}
+
+input#email {
+  width: 240px;
+  margin-bottom: 16px;
+}
+
+input#number {
+  width: 240px;
+  margin-bottom: 16px;
+}
+
+select#dropdown {
+  width: 240px;
+  margin-bottom: 16px;
+}
+
+.choice {
+  list-style: none;
+}
+
+textarea#comment-box {
+  width: 240px;
+  margin-bottom: 16px;
+}
+
+button#submit {
+  width: 240px;
+  margin-bottom: 16px;
 }
