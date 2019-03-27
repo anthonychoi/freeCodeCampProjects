@@ -22,11 +22,10 @@
         <input id="email" type="email" name="email" placeholder="Enter your email" required>
 
         <label for="age" id="number-label">Age</label>
-        <input type="number" name="age" id="number" min="0" max="150" placeholder="Enter your age">
+        <input type="number" name="age" id="number" min="0" max="150">
 
         <label for="pokemon" id="pokemon-label">Choose your Pokemon</label>
         <select id="dropdown" name="pokemon">
-          <option class="dropdown-option" disabled selected value="">Select a Pokemon</option>
           <option class="dropdown-option" value="bulbasaur">Bulbasaur</option>
           <option class="dropdown-option" value="squirtle">Squirtle</option>
           <option class="dropdown-option" value="charmander">Charmander</option>
@@ -47,7 +46,7 @@
         </ul>
 
         <label for="comment" id="comment-label">Feedback</label>
-        <textarea type="text" name="comment" id="comment-box"></textarea>
+        <textarea type="text" name="comment" id="comment-box" placeholder="Enter your feedback here"></textarea>
         <button id="submit" type="submit">Submit my feedback</button>
       </form>
     </main>
