@@ -35,7 +35,7 @@ input#email {
 }
 
 input#number {
-  width: 240px;
+  width: 80px;
   margin-bottom: 16px;
 }
 
@@ -48,8 +48,13 @@ select#dropdown {
   list-style: none;
 }
 
+li .list-input {
+  margin: 8px;
+}
+
 textarea#comment-box {
   width: 240px;
+  height: 240px;
   margin-bottom: 16px;
 }
 
