@@ -4,3 +4,22 @@ body {
   font-family: Helvetica;
   line-height: 1.5;
 }
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+}
+
+#promotile-row {
+  display: flex;
+}
+
+#promotile-row .promotile {
+  width: 33%;
+}
+
+@media (max-width: 968px) {
+  #promotile-row .promotile {
+    width: 100%;
+  }
+}
