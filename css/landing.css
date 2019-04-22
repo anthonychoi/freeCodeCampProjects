@@ -42,23 +42,24 @@ main {
   display: flex;
   flex-flow: row wrap;
   width: auto;
+  justify-content: center;
 }
 
 #promotile-row .promotile {
-  flex: 0 0 33.3333333%;
-  max-width: 33.3333333%;
+  flex: 0 0 30%;
+  max-width: 30%;
   padding: 24px 0;
   transition: transform 0.3s;
 }
 
 .promotile:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition: all 0.3s;
 }
 
 @media (max-width: 991px) {
   #promotile-row .promotile {
-    max-width: 100%;
-    flex: 0 0 100%;
+    max-width: 90%;
+    flex: 0 0 90%;
   }
 }
