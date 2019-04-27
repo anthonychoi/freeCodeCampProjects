@@ -24,7 +24,7 @@ body {
   border-radius: 4px;
   padding: 4px;
   transition: color 1s,
-              border-color 1s;
+  border-color 1s;
 }
 
 .nav-link:hover {
